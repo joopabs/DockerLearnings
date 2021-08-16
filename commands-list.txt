@@ -6,3 +6,13 @@ docker images
 
 // download docker images to local
 docker pull
+
+docker run -d -p 8080:8080 --restart=always IMAGE[:TAG]
+
+// run image  with interactice shell
+docker run -dit IMAGE[:TAG]
+
+docker container exec <container_name> ls /tmp
+docker container cp <local_file> <container_name>:<path>
+
+docker container commit <container_name> IMAGE[:TAG]
