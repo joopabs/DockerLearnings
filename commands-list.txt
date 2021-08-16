@@ -14,5 +14,5 @@ docker run -dit IMAGE[:TAG]
 
 docker container exec <container_name> ls /tmp
 docker container cp <local_file> <container_name>:<path>
-
 docker container commit <container_name> IMAGE[:TAG]
+docker container commit --change='CMD ["java", "-jar", "/path/to/jar"]' <container_name> IMAGE[:TAG]
