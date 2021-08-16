@@ -1,0 +1,8 @@
+// lists all docker containers regardless of running status
+docker container ls -a
+
+// show local images
+docker images
+
+// download docker images to local
+docker pull
